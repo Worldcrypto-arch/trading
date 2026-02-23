@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL PROFE FENIX FOREX | Terminal IA</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="theme-default">
+    <!-- Fondos animados Premium -->
+    <div id="particles-js" class="particles-container"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+    <div class="bg-glow bg-glow-secondary"></div>
+
+    <!-- Landing Page (Home) -->
+    <div id="landing-screen" class="screen active">
+        <div class="landing-content">
+            <nav class="landing-nav">
+                <div class="logo-area">
+                    <h1 class="logo-text">PXFX<span>IA</span></h1>
+                </div>
+                <div class="nav-links-public">
+                    <a href="#market-sections">Mercado</a>
+                </div>
+                <button class="btn-glow btn-empezar"
+                    onclick="showScreen('login-screen'); setTimeout(() => document.getElementById('to-register').click(), 50);">Regístrate</button>
+            </nav>
+
+            <!-- Redesigned Hero: What is this page? -->
+            <section class="hero-premium">
+                <!-- Hologramas de Criptomonedas Flotantes -->
+                <div class="crypto-holograms">
+                    <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=026" alt="Bitcoin"
+                        class="crypto-float btc">
+                    <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=026" alt="Ethereum"
+                        class="crypto-float eth">
+                    <img src="https://cryptologos.cc/logos/solana-sol-logo.png?v=026" alt="Solana"
+                        class="crypto-float sol">
+                    <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png?v=026" alt="BNB"
+                        class="crypto-float bnb">
+                </div>
+
+                <div class="hero-info">
+                    </h2>
+                    <p class="hero-subtext">PXFX IA es una terminal de análisis avanzado diseñada para traders que
+                        buscan dominar el impacto de las noticias macroeconómicas. Procesamos flujos de datos
+                        institucionales y los transformamos en pronósticos de volatilidad con precisión neuronal.</p>
+
+                    <div class="hero-actions-container">
+                        <button class="btn-primary-glow" onclick="showScreen('login-screen')">Ingresar a la
+                            Terminal</button>
+                        <button class="btn-outline-minimal"
+                            onclick="document.getElementById('about-platform').scrollIntoView({behavior: 'smooth'})">¿Cómo
+                            funciona?</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="ai-processing-card"
+                        style="position: relative; z-index: 2; border-radius: 30px; background: rgba(13, 17, 23, 0.8); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.05); padding: 30px; width: 340px;">
+                        <div class="processing-header"
+                            style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px; color: var(--accent); font-family: var(--font-mono); font-size: 0.7rem;">
+                            <i class="fas fa-brain"></i>
+                            <span>SISTEMA NEURONAL ACTIVO</span>
+                        </div>
+                        <div class="data-row"
+                            style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.8rem;">
+                            <span style="color: var(--text-dim);">FOMC_SCAN</span><strong class="up"
+                                style="color: var(--green);">BULLISH</strong>
+                        </div>
+                        <div class="data-row"
+                            style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.8rem;">
+                            <span style="color: var(--text-dim);">NAS100_VOL</span><strong
+                                style="color: white;">HIGH_EXP</strong>
+                        </div>
+                        <div class="data-row" style="display: flex; justify-content: space-between; font-size: 0.8rem;">
+                            <span style="color: var(--text-dim);">SUCCESS_RATE</span><strong class="up"
+                                style="color: var(--accent);">94.2%</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- New Section: About the Platform -->
+            <section id="about-platform" class="platform-manifesto">
+                <div class="manifesto-header">
+                    <span>EL CORAZÓN DEL SISTEMA</span>
+                    <h2 style="font-size: 2.5rem; margin-top: 10px;">Trading Basado en Evidencia, No en Suerte.</h2>
+                </div>
+                <div class="manifesto-grid">
+                    <div class="manifesto-card">
+                        <i class="fas fa-satellite-dish"></i>
+                        <h3>Filtro de Impacto</h3>
+                        <p>Nuestra terminal intercepta noticias globales de alto impacto (PIB, Tasas, Empleo) antes de
+                            que el mercado las absorba por completo.</p>
+                    </div>
+                    <div class="manifesto-card">
+                        <i class="fas fa-microchip"></i>
+                        <h3>Análisis IA</h3>
+                        <p>No usamos indicadores tradicionales. Usamos lógica fundamental procesada por IA para darte un
+                            "Bias" o dirección clara del mercado.</p>
+                    </div>
+                    <div class="manifesto-card">
+                        <i class="fas fa-shield-halved"></i>
+                        <h3>Ventaja Operativa</h3>
+                        <p>Dile adiós a la incertidumbre. Opera con la tranquilidad de tener un reporte institucional
+                            respaldando cada una de tus decisiones.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Redesigned Asset Definition: The Asset Codex -->
+            <section id="market-sections" class="asset-codex-section">
+                <div class="section-header-left" style="margin-bottom: 60px;">
+                    <span class="technical-label">DATASET_RECORDS // MARKET_DEFINITIONS</span>
+                    <h2 style="font-size: 3rem;">Domina los Activos con Mayor Liquidez</h2>
+                    <p style="color: var(--text-dim); max-width: 600px; margin-top: 15px;">Entiende el ADN de los
+                        mercados financieros y cómo nuestra IA los analiza.</p>
+                </div>
+
+                <div class="codex-container">
+                    <!-- NASDAQ -->
+                    <div class="codex-entry">
+                        <div class="entry-visual tech-bg"><i class="fas fa-microchip"></i></div>
+                        <div class="entry-content">
+                            <span class="entry-tag">TECNOLOGÍA GLOBAL</span>
+                            <h3>NASDAQ 100 <small>NAS100</small></h3>
+                            <p>Representa a las 100 empresas tecnológicas más poderosas (Microsoft, Apple, Nvidia). Es
+                                el motor del crecimiento digital. Nuestra IA lo analiza buscando correlaciones con las
+                                tasas de interés y los rendimientos de bonos.</p>
+                        </div>
+                    </div>
+
+                    <!-- US30 -->
+                    <div class="codex-entry">
+                        <div class="entry-visual ind-bg"><i class="fas fa-industry"></i></div>
+                        <div class="entry-content">
+                            <span class="entry-tag">SANGRE INDUSTRIAL</span>
+                            <h3>US30 (DOW JONES) <small>DOW30</small></h3>
+                            <p>Las 30 corporaciones que fundaron Estados Unidos. Es el activo de la estabilidad. PXFX IA
+                                rastrea su salud macroeconómica para identificar giros de tendencia a largo plazo.</p>
+                        </div>
+                    </div>
+
+                    <!-- SP500 -->
+                    <div class="codex-entry">
+                        <div class="entry-visual sp-bg"><i class="fas fa-chart-line"></i></div>
+                        <div class="entry-content">
+                            <span class="entry-tag">EL ESTÁNDAR DE ORO</span>
+                            <h3>S&P 500 <small>SPX500</small></h3>
+                            <p>El balance perfecto de 500 empresas. Es el mapa del sentimiento institucional. Donde se
+                                mueve el SP500, se mueve el mundo financiero. Nuestra terminal detecta cambios en su
+                                flujo de capital masivo.</p>
+                        </div>
+                    </div>
+
+                    <!-- ORO -->
+                    <div class="codex-entry">
+                        <div class="entry-visual gold-bg"><i class="fas fa-coins"></i></div>
+                        <div class="entry-content">
+                            <span class="entry-tag">REFUGIO ANTICRISIS</span>
+                            <h3>ORO <small>XAUUSD</small></h3>
+                            <p>El refugio definitivo. Brilla en tiempos de guerra, inflación o miedo. PXFX IA estudia el
+                                rendimiento del dólar y el sentimiento de riesgo para predecir recorridos técnicos
+                                explosivos en el metal precioso.</p>
+                        </div>
+                    </div>
+
+                    <!-- PLATA -->
+                    <div class="codex-entry">
+                        <div class="entry-visual silver-bg"><i class="fas fa-gem"></i></div>
+                        <div class="entry-content">
+                            <span class="entry-tag">VOLATILIDAD COMMODITY</span>
+                            <h3>PLATA <small>XAGUSD</small></h3>
+                            <p>La hermana rápida del oro. Con aplicaciones masivas en tecnología, su volatilidad es
+                                mucho mayor. Es el activo favorito de nuestro algoritmo para capturar pips rápidos en
+                                noticias de oferta y demanda industrial.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="stats-bar-landing">
+                <div class="stat-item">
+                    <h4>+2.4B</h4>
+                    <span>VOLUMEN ANALIZADO</span>
+                </div>
+                <div class="stat-item">
+                    <h4>99.9%</h4>
+                    <span>TIEMPO DE ACTIVIDAD</span>
+                </div>
+                <div class="stat-item">
+                    <h4>256-bit</h4>
+                    <span>ENCRIPTACIÓN PRO</span>
+                </div>
+            </div>
+
+            <footer class="landing-footer-minimal">
+                <p>&copy; 2026 EL PROFE FENIX FOREX | ACCESO EXCLUSIVO PXFX IA</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Auth Gateway -->
+    <div id="login-screen" class="screen">
+        <div class="glass-box login-card">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="title">AUTH_GATE_V3.0_PRO</span>
+            </div>
+            <div class="logo-area">
+                <h1 class="logo-text">EL PROFE FENIX<span>FOREX</span></h1>
+                <p class="tagline">ACCESO EXCLUSIVO: TERMINAL IA</p>
+            </div>
+            <form id="login-form">
+                <div class="input-group">
+                    <label>USUARIO</label>
+                    <input type="text" id="username" placeholder="Agregar tu nombre de usuario" required>
+                </div>
+                <div class="input-group">
+                    <label>CONTRASEÑA</label>
+                    <input type="password" id="password" placeholder="••••••••••••" required>
+                </div>
+                <button type="submit" class="btn-glow">INICIAR TERMINAL</button>
+                <p class="form-footer">¿No tienes cuenta? <a href="#" id="to-register">Regístrate aquí</a></p>
+            </form>
+
+            <form id="public-register-form" style="display: none;">
+                <div class="input-group">
+                    <label>NUEVO USUARIO</label>
+                    <input type="text" id="reg-username" placeholder="Tu nombre de usuario" required>
+                </div>
+                <div class="input-group">
+                    <label>CONTRASEÑA</label>
+                    <input type="password" id="reg-password" placeholder="••••••••••••" required>
+                </div>
+                <button type="submit" class="btn-glow" style="background: var(--accent); color: black;">CREAR
+                    CUENTA</button>
+                <p class="form-footer">¿Ya tienes cuenta? <a href="#" id="to-login">Inicia sesión</a></p>
+            </form>
+
+            <div id="login-error" class="error-msg"></div>
+        </div>
+    </div>
+
+    <div id="dashboard-screen" class="screen">
+        <nav class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fas fa-bolt" style="color:var(--yellow)"></i> PXFX IA
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active"><i class="fas fa-calendar-day"></i> Hoy</a>
+                <a href="#"><i class="fas fa-history"></i> Historial</a>
+                <a href="#"><i class="fas fa-brain"></i> AI Analysis</a>
+                <a href="#"><i class="fas fa-calendar-alt"></i> Calendario</a>
+                <a href="#"><i class="fas fa-cog"></i> Ajustes</a>
+            </div>
+            <div class="user-profile" id="user-profile-trigger">
+                <div class="session-menu" id="session-menu">
+                    <div class="session-item" id="session-lock">
+                        <i class="fas fa-lock"></i> Cerrar Sesión Momentáneamente
+                    </div>
+                    <div class="session-item" id="session-switch">
+                        <i class="fas fa-user-friends"></i> Cambiar de Usuario
+                    </div>
+                    <div class="session-item danger" id="session-exit">
+                        <i class="fas fa-sign-out-alt"></i> Salir del Usuario
+                    </div>
+                </div>
+                <div class="avatar">PF</div>
+                <div class="user-info">
+                    <span class="name">Profe Fenix</span>
+                    <span class="status">Premium Pro</span>
+                </div>
+            </div>
+        </nav>
+
+        <main class="content">
+            <header class="dashboard-header">
+                <div class="header-left">
+                    <h1>Terminal Operativa</h1>
+                    <p id="current-date"></p>
+                </div>
+                <div class="ticker">
+                    <div class="ticker-item"><span class="symbol">XAUUSD</span> <span class="price">2024.50</span> <span
+                            class="change up">+0.15%</span></div>
+                    <div class="ticker-item"><span class="symbol">NAS100</span> <span class="price">17850.20</span>
+                        <span class="change down">-0.42%</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="grid-layout">
+                <div class="main-column" id="today-view">
+                    <div class="glass-box section-card">
+                        <div class="card-header">
+                            <h2><span class="impact-indicator high"></span> Noticias de Alto Impacto (USD)</h2>
+                            <button class="btn-refresh" id="refresh-data"><i class="fas fa-sync"></i>
+                                Actualizar</button>
+                        </div>
+                        <div id="news-container" class="news-list">
+                            <div class="news-item loading">CARGANDO DATOS DEL MERCADO...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW: AI Analysis View -->
+                <div class="main-column" id="ai-view" style="display: none;">
+                    <div class="glass-box section-card elite-analysis">
+                        <div class="card-header">
+                            <h2><i class="fas fa-robot"></i> LIVE MARKET BIAS ANALYZER</h2>
+                            <div class="ai-status">SISTEMA NEURONAL: ACTIVO</div>
+                        </div>
+                        <div id="ai-main-dashboard" class="ai-dashboard-content">
+                            <!-- Dynamically generated AI content -->
+                            <div class="scanning-placeholder">
+                                <div class="scanner-beam"></div>
+                                <p>ANALIZANDO FLUJOS DE LIQUIDEZ Y DATOS MACRO...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW: History View -->
+                <div class="main-column" id="history-view" style="display: none;">
+                    <div class="glass-box section-card">
+                        <div class="card-header">
+                            <h2><i class="fas fa-history"></i> HISTORIAL SEMANAL (ÚLTIMOS 7 DÍAS)</h2>
+                        </div>
+                        <div id="history-container" class="news-list">
+                            <!-- Historical news loaded here -->
+                            <div class="no-data">Escaneando archivos de la terminal...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW: Calendar View -->
+                <div class="main-column" id="calendar-view" style="display: none;">
+                    <div class="glass-box section-card">
+                        <div class="card-header">
+                            <h2><i class="fas fa-calendar-alt"></i> MASTER CALENDAR - FEBRERO 2026</h2>
+                            <div class="ai-status">PERSISTENCIA MENSUAL ACTIVA</div>
+                        </div>
+                        <div id="calendar-grid" class="calendar-grid">
+                            <!-- 31 Days generated by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Admin Management View moved inside Ajustes -->
+                <div class="main-column" id="ajustes-view" style="display: none;">
+                    <div class="glass-box section-card">
+                        <div class="card-header">
+                            <h2><i class="fas fa-cog"></i> AJUSTES DE TERMINAL</h2>
+                        </div>
+                        <div class="admin-dashboard">
+                            <!-- Section for Admins: Session Management and Users -->
+                            <div id="admin-sessions-section" style="display: none;">
+                                <h3><i class="fas fa-users-viewfinder"></i> CONTROL DE SESIONES (LIVE)</h3>
+                                <p style="font-size:0.75rem; color:var(--text-dim); margin-bottom:15px;">
+                                    Monitorea quién tiene acceso activo a la terminal operativa. Puedes eliminar el
+                                    acceso de cualquier usuario de forma inmediata.
+                                </p>
+                                <div id="active-sessions-list" class="user-list" style="margin-bottom: 25px;">
+                                    <div class="loading-small">Rastreando sesiones activas...</div>
+                                </div>
+
+                                <hr style="opacity:0.1; margin:20px 0;">
+
+                                <h3><i class="fas fa-user-shield"></i> GESTIÓN DE USUARIOS</h3>
+                                <div class="admin-section" style="margin-top: 15px;">
+                                    <h4>Crear Nuevo Usuario</h4>
+                                    <form id="create-user-form" class="admin-form">
+                                        <input type="text" id="new-username" placeholder="Nombre de usuario" required>
+                                        <input type="password" id="new-password" placeholder="Contraseña" required>
+                                        <label class="check-container">
+                                            <input type="checkbox" id="new-is-admin"> Es Administrador
+                                        </label>
+                                        <button type="submit" class="btn-glow small">Registrar</button>
+                                    </form>
+                                    <div id="create-user-msg" class="msg"></div>
+                                </div>
+
+                                <div class="admin-section">
+                                    <h4>Cambiar Contraseña</h4>
+                                    <form id="change-pass-form" class="admin-form">
+                                        <input type="text" id="target-username" placeholder="Usuario a modificar"
+                                            required>
+                                        <input type="password" id="target-password" placeholder="Nueva contraseña"
+                                            required>
+                                        <button type="submit" class="btn-glow small">Actualizar</button>
+                                    </form>
+                                    <div id="change-pass-msg" class="msg"></div>
+                                </div>
+
+                                <div class="admin-section" style="margin-top:20px;">
+                                    <h4>Usuarios Registrados</h4>
+                                    <div id="user-list" class="user-list">
+                                        <div class="loading-small">Cargando usuarios...</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr style="opacity:0.1; margin:20px 0;">
+
+                            <div class="admin-section">
+                                <h3>Personalización de Tema</h3>
+                                <p style="font-size:0.75rem; color:var(--text-dim); margin-bottom:15px;">Selecciona el
+                                    ambiente que mejor se adapte a tu trading.</p>
+                                <div class="theme-selector" style="display:flex; gap:15px; margin-bottom:25px;">
+                                    <button class="theme-btn" data-theme="default" title="Tema Azul"
+                                        style="background:#00d4ff; border:2px solid transparent; width:35px; height:35px; border-radius:50%; cursor:pointer; transition:0.3s;"></button>
+                                    <button class="theme-btn" data-theme="red" title="Tema Rojo"
+                                        style="background:#ff3e3e; border:2px solid transparent; width:35px; height:35px; border-radius:50%; cursor:pointer; transition:0.3s;"></button>
+                                    <button class="theme-btn" data-theme="white" title="Tema Blanco"
+                                        style="background:#ffffff; border:2px solid #ddd; width:35px; height:35px; border-radius:50%; cursor:pointer; transition:0.3s;"></button>
+                                </div>
+                            </div>
+
+                            <hr style="opacity:0.1; margin:20px 0;">
+
+                            <div class="admin-section">
+                                <h3>Preferencias de Perfil</h3>
+                                <button id="logout-btn" class="btn-glow small"
+                                    style="background: rgba(255,62,101,0.2); border-color: rgba(255,62,101,0.5);">
+                                    Cerrar Sesión Pro
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- This side column will be shared or dynamic -->
+                <div id="calendar-details-panel" style="display: none;">
+                    <div class="glass-box section-card elite-analysis" style="margin-bottom: 20px;">
+                        <h2 id="selected-date-title">ANÁLISIS DE DÍA</h2>
+                        <div id="day-bias-content"></div>
+                    </div>
+                </div>
+                <div class="glass-box section-card ai-card">
+                    <h2 class="ai-title"><i class="fas fa-robot"></i> AI PRO FORECAST</h2>
+                    <div id="ai-insight">
+                        <p class="insight-text">Inicia sesión y selecciona una noticia para análisis de volatilidad
+                            avanzado.</p>
+                    </div>
+                </div>
+
+                <div class="glass-box section-card alert-card">
+                    <h2><i class="fas fa-chart-line"></i> DIRECCIÓN DE ACTIVOS (LIVE)</h2>
+                    <div id="next-event" class="asset-directions-container">
+                        <span class="no-data">No hay eventos próximos detectados.</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
